@@ -23,26 +23,21 @@ void enqueue(int n){
             
             if(n<pqueue[i]){
                 pqueue[i+1]=pqueue[i];
-                
             }
             else{
                 break;
             }
             
-        }
-            
+	}
             pqueue[i+1]=n;
-           
             count++;
-            r=count-1;
-            
+            r=count-1;  
   }
 }
 
 //delete from queue
 void dequeue(){
-    
-    
+
     if (f==-1 && r==-1){
         printf("\n the queue is empty");
         
@@ -54,11 +49,9 @@ void dequeue(){
       }
     
     else{
-        
         printf("\n %d deleted",pqueue[f]);
         f++;
     }
-    
 }
 
 //display function
@@ -70,29 +63,25 @@ void display(){
     }
 }
 
-
 int main(void) {
     
 //code test
     enqueue(1);
     enqueue(7);
-    
     enqueue(15);
     enqueue(2);
     enqueue(4);
     
-    
     printf("\n");
+	
     display();
     dequeue();
     printf("\n after dequeue");
-    
     display();
     
     dequeue();
     dequeue();
     dequeue();
-    
     dequeue();
     dequeue();
     dequeue();
