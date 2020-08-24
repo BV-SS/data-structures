@@ -105,7 +105,7 @@ struct node * deletenode(struct node * root, int d){
 
 int main(void) {
 	// tree structure :
-	/*        15 
+	/*    15 
             /    \ 
            5     18 
           / \    / \ 
